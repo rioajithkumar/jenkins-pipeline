@@ -1,0 +1,40 @@
+import express from "express";
+
+import {
+  getProducts,
+  addProduct,
+  updateProduct,
+  deleteProduct
+} from "../controllers/productController.js";
+
+import {
+  adminAuth
+} from "../middleware/adminAuth.js";
+
+const router = express.Router();
+
+router.get(
+  "/",
+  adminAuth,
+  getProducts
+);
+
+router.post(
+  "/",
+  adminAuth,
+  addProduct
+);
+
+router.put(
+  "/:id",
+  adminAuth,
+  updateProduct
+);
+
+router.delete(
+  "/:id",
+  adminAuth,
+  deleteProduct
+);
+
+export default router;
