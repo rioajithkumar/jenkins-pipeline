@@ -7,7 +7,7 @@ export default function Home() {
       <section className="hero">
 
         <div>
-          <h1>Welcome to ShopDemo</h1>
+          <h1>Welcome to AdminShop</h1>
 
           <p>
             Your simple online shopping platform.

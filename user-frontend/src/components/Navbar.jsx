@@ -12,7 +12,7 @@ export default function Navbar() {
     <nav className="navbar">
 
       <div className="logo">
-        <Link to="/">ShopDemo</Link>
+        <Link to="/">AmdinShop</Link>
       </div>
 
       <div className="nav-links">
